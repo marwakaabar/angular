@@ -1,0 +1,19 @@
+<!--<div *ngIf="active && invoice">
+    <h2>Détails de la facture {{ id }}</h2>
+    <p>Montant de la facture : {{ invoice.montantFacture }}</p>
+    <p>Date de la facture : {{ invoice.dateFacture }}</p>
+  </div>
+  <div *ngIf="!invoice">
+    <p>Impossible de visualiser les détails de la facture.</p>
+  </div>
+-->
+<div *ngIf="id !== null && active !== null">
+  <h2>Détails de la facture {{ id }}</h2>
+  
+  <!-- Affichez les détails de la facture ici, en utilisant id et active -->
+</div>
+<div *ngIf="id === null || active === null">
+  <p>Impossible de visualiser les détails de la facture.</p>
+</div>
+<!-- Bouton "Retour" -->
+<button routerLink="/main-invoice">Retour</button>
